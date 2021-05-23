@@ -42,16 +42,16 @@ def scrape(secure=False):
     #password=getpass()
 
     userpas=driver.find_element_by_xpath('//input[@name="session[password]"]')
-    userpas.send_keys('7072044aA')
+    userpas.send_keys('-----')
     userpas.send_keys(Keys.RETURN)
     sleep(2)
     
     if secure:
         username=driver.find_element_by_xpath('//input[@name="session[username_or_email]"]')
-        username.send_keys("03111415961")
+        username.send_keys("031-----")
 
         userpas=driver.find_element_by_xpath('//input[@name="session[password]"]')
-        userpas.send_keys('7072044aA')
+        userpas.send_keys('----')
         userpas.send_keys(Keys.RETURN)
         sleep(2)
 
